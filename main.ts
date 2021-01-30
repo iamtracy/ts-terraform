@@ -22,7 +22,7 @@ class Stack extends TerraformStack {
 					containerPort: 80,
 					hostPort: 8000,
 				},
-				cpu: 1,
+				cpu: 2,
 			}] as Array<Partial<{}>>),
 			family: name
 		})
