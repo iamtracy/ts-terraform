@@ -6,7 +6,7 @@
   "license": "MPL-2.0",
   "private": true,
   "scripts": {
-		"ws": "yarn workspace",
+    "ws": "yarn workspace",
     "deploy": "cdktf deploy --auto-approve",
     "get": "cdktf get",
     "build": "cdktf get && tsc",
@@ -29,8 +29,8 @@
     "@types/node": "^14.14.22",
     "cdktf-cli": "^0.1.0",
     "typescript": "^4.1.3"
-	},
-	"workspaces": [
-		"app"
-	]
+  },
+  "workspaces": [
+    "app"
+  ]
 }
