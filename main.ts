@@ -6,7 +6,7 @@ import { EcsTaskDefinition } from './.gen/providers/aws/ecs-task-definition'
 import { EcsCluster } from './.gen/providers/aws/ecs-cluster'
 import { Instance } from './.gen/providers/aws/instance'
 import { AwsProvider } from './.gen/providers/aws/aws-provider'
-import * as containerDefinitions from './task-definitions.json'
+import { containerDefinitions } from './task-definition.json'
 
 class Stack extends TerraformStack {
 	constructor(scope: Construct, name: string) {
