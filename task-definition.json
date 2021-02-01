@@ -1,0 +1,15 @@
+{
+	"requiresCompatibilities": [
+    "EC2"
+	],
+  "networkMode": "bridge",
+	"family": "typescript-aws",
+	"containerDefinitions": [{
+		"image": "625735812672.dkr.ecr.us-west-1.amazonaws.com/typescript-aws:87ad34505ca093bc7b14a350ad650edbd00483f1",
+		"memory": 2048,
+		"name": "nginxImage",
+		"portMappings": [{
+			"containerPort": 80
+		}]
+	}]
+}
