@@ -4,7 +4,7 @@
 # To use this workflow, you will need to complete the following set-up steps:
 #
 # 1. Create an ECR repository to store your images.
-#    For example: `aws ecr create-repository --repository-name my-ecr-repo --region us-east-2`.
+#    For example: `aws ecr create-repository --repository-name typescript-aws --region us-east-2`.
 #    Replace the value of `ECR_REPOSITORY` in the workflow below with your repository's name.
 #    Replace the value of `aws-region` in the workflow below with your repository's region.
 #
@@ -69,7 +69,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: my-ecr-repo
+        ECR_REPOSITORY: typescript-aws
         IMAGE_TAG: ${{ github.sha }}
       run: |
         # Build a docker container and
