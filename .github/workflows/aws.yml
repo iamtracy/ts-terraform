@@ -87,7 +87,7 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: task-definition.json
-        container-name: sample-app
+        container-name: nginxImage
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Print steps.task-def.outputs.task-definition
