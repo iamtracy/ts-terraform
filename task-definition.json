@@ -2,6 +2,7 @@
 	"family": "typescript-aws",
 	"containerDefinitions": [{
 		"image": "625735812672.dkr.ecr.us-west-1.amazonaws.com/typescript-aws:fe28ca16e849a6ff782d1a8be2a8b6d19376401a",
-		"name": "nginxImage"
+		"name": "nginxImage",
+		"memory": 2048
 	}]
 }
